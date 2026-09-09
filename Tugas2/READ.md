@@ -36,7 +36,7 @@ Program berjalan dalam *looping* (perulangan) menu utama dan mengeksekusi fungsi
    * Menghitung determinan matriks $K$: $\text{det} = (ad - bc) \pmod{26}$.
    * Mencari nilai invers modular dari determinan tersebut terhadap 26 (`mod_inverse`).
    * Jika invers determinan tidak ada, program menampilkan pesan peringatan bahwa kunci tidak valid dan menghentikan dekripsi.
-   * Jika ada, hitung matriks adjoint $\begin{bmatrix} d & -b \\ -c & a \end{bmatrix} \pmod{26}$ dan kalikan dengan invers determinan.
+   * Jika ada, hitung matriks adjoint dan kalikan dengan invers determinan.
 2. **Konversi Teks:** Mengubah *ciphertext* menjadi array angka dengan `text_to_numbers`.
 3. **Proses Perkalian Blok:**
    * Mengambil setiap pasang angka *ciphertext*.
@@ -55,9 +55,7 @@ Fungsi ini mencari matriks kunci $K$ menggunakan rumus $K = (C \cdot P^{-1}) \pm
 1. **Validasi Input:** Mengecek apakah panjang *plaintext* dan *ciphertext* minimal 4 karakter.
 2. **Penyusunan Matriks $P$ dan $C$:**
    * Mengambil 4 angka pertama dari *plaintext* ($p_1, p_2, p_3, p_4$) dan menyusun matriks $P$:
-     $$P = \begin{bmatrix} p_1 & p_3 \\ p_2 & p_4 \end{bmatrix}$$
    * Mengambil 4 angka pertama dari *ciphertext* ($c_1, c_2, c_3, c_4$) dan menyusun matriks $C$:
-     $$C = \begin{bmatrix} c_1 & c_3 \\ c_2 & c_4 \end{bmatrix}$$
 3. **Hitung Invers Matriks Plaintext ($P^{-1}$):**
    * Memanggil `matrix_mod_inverse(P)` untuk mendapatkan $P^{-1} \pmod{26}$.
    * Jika matriks $P$ tidak memiliki invers modulo 26, proses dihentikan dan sistem meminta input teks lain.
