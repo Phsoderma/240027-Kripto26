@@ -19,11 +19,11 @@ def matrix_mod_inverse(matrix, m=26):
     det_inv = mod_inverse(det, m)
     
     if det_inv is None:
-        return None 
-    
-        adj = np.array([[matrix[1, 1], -matrix[0, 1]],
+        return None
+
+    adj = np.array([[matrix[1, 1], -matrix[0, 1]],
                     [-matrix[1, 0], matrix[0, 0]]]) % m
-    
+
     inv_matrix = (det_inv * adj) % m
     return inv_matrix.astype(int)
 
@@ -42,12 +42,14 @@ def encrypt_hill(plaintext, key_matrix):
 
 def decrypt_hill(ciphertext, key_matrix):
     inv_key = matrix_mod_inverse(key_matrix)
+
     if inv_key is None:
-        print("\n[!] Kunci tidak valid karena tidak memiliki invers mod 26!")
+        print("\n[!] Error: Kunci tidak memiliki invers modulo 26 (Determinan tidak relatif prima dengan 26).")
         return None
     
     nums = text_to_numbers(ciphertext)
     plaintext = []
+    
     for i in range(0, len(nums), 2):
         pair = np.array(nums[i:i+2])
         decrypted_pair = np.dot(inv_key, pair) % 26

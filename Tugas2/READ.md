@@ -24,6 +24,9 @@ Program berjalan dalam *looping* (perulangan) menu utama dan mengeksekusi fungsi
    * Melakukan perkalian matriks: $(K \times \text{vektor}) \pmod{26}$.
 4. **Hasil:** Memanggil `numbers_to_text` untuk mengonversi angka hasil perkalian kembali menjadi string *ciphertext*.
 
+### Output Menu 1 (Enkripsi):
+![Output Menu 1](assets/Output%20Menu%201.png)
+
 ---
 
 ## 3. Fungsi Dekripsi (`decrypt_hill`)
@@ -39,6 +42,9 @@ Program berjalan dalam *looping* (perulangan) menu utama dan mengeksekusi fungsi
    * Mengambil setiap pasang angka *ciphertext*.
    * Melakukan perkalian matriks: $(K^{-1} \times \text{vektor}) \pmod{26}$.
 4. **Hasil:** Mengonversi hasil angka kembali ke bentuk string *plaintext* dengan `numbers_to_text`.
+
+### Output Menu 2 (Dekripsi):
+![Output Menu 2](assets/Output%20Menu%202.png)
 
 ---
 
@@ -60,3 +66,8 @@ Fungsi ini mencari matriks kunci $K$ menggunakan rumus $K = (C \cdot P^{-1}) \pm
      $$K = (C \cdot P^{-1}) \pmod{26}$$
 5. **Hasil:** Mengembalikan matriks $K$ berukuran $2 \times 2$ yang berhasil ditemukan.
 
+<<<<<<< HEAD
+=======
+### Output Menu 3 (Cari Kunci):
+![Output Menu 3](assets/Output%20Menu%203.png)
+>>>>>>> 6c25e53 (Tugas 2: programs debug and update MD)
