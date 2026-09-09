@@ -8,10 +8,10 @@ Berikut adalah penjelasan alur kerja program Hill Cipher 2x2 berdasarkan fungsi 
 
 Program berjalan dalam *looping* (perulangan) menu utama dan mengeksekusi fungsi sesuai opsi yang dipilih oleh pengguna:
 
-* **Pilihan 1 (Enkripsi):** Meminta input *plaintext* dan 4 nilai matriks kunci $K = \begin{bmatrix} k_{11} & k_{12} \\ k_{21} & k_{22} \end{bmatrix}$, lalu memanggil fungsi `encrypt_hill`.
-* **Pilihan 2 (Dekripsi):** Meminta input *ciphertext* dan 4 nilai matriks kunci $K$, lalu memanggil fungsi `decrypt_hill`.
+* **Pilihan 1 (Enkripsi):** Meminta input *plaintext* dan 4 nilai matriks kunci, lalu memanggil fungsi `encrypt_hill`.
+* **Pilihan 2 (Dekripsi):** Meminta input *ciphertext* dan 4 nilai matriks kunci, lalu memanggil fungsi `decrypt_hill`.
 * **Pilihan 3 (Cari Kunci):** Meminta input *plaintext* dan *ciphertext* (minimal 4 karakter), lalu memanggil fungsi `find_key_algebraic`.
-* **Pilihan 4 (Keluar):** Menghentikan perulangan dan mengakhiri program.
+* **Pilihan 4 (Keluar):** Mengakhiri program.
 
 ---
 
