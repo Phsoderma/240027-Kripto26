@@ -1,10 +1,10 @@
-# Alur Kerja Program Hill Cipher 2x2
+# Alur Kerja Program Hill Cipher
 
 Berikut adalah penjelasan alur kerja program Hill Cipher 2x2 berdasarkan fungsi dan nilai/formula yang ada pada kode Python.
 
 ---
 
-## 1. Alur Utama (Menu Interaktif)
+## 1. Menu Interaktif
 
 Program berjalan dalam *looping* (perulangan) menu utama dan mengeksekusi fungsi sesuai opsi yang dipilih oleh pengguna:
 
@@ -15,7 +15,7 @@ Program berjalan dalam *looping* (perulangan) menu utama dan mengeksekusi fungsi
 
 ---
 
-## 2. Alur Fungsi Enkripsi (`encrypt_hill`)
+## 2. Fungsi Enkripsi (`encrypt_hill`)
 
 1. **Konversi Teks:** Memanggil `text_to_numbers` untuk mengubah *plaintext* menjadi array angka ($A=0, B=1, \dots, Z=25$).
 2. **Padding:** Mengecek panjang array angka. Jika ganjil (tidak habis dibagi 2), karakter `'X'` (nilai 23) ditambahkan ke akhir array.
@@ -26,7 +26,7 @@ Program berjalan dalam *looping* (perulangan) menu utama dan mengeksekusi fungsi
 
 ---
 
-## 3. Alur Fungsi Dekripsi (`decrypt_hill`)
+## 3. Fungsi Dekripsi (`decrypt_hill`)
 
 1. **Hitung Matriks Invers ($K^{-1}$):**
    * Memanggil `matrix_mod_inverse(key_matrix)` untuk menghitung $K^{-1} \pmod{26}$.
@@ -42,7 +42,7 @@ Program berjalan dalam *looping* (perulangan) menu utama dan mengeksekusi fungsi
 
 ---
 
-## 4. Alur Fungsi Mencari Kunci (`find_key_algebraic`)
+## 4. Fungsi Mencari Kunci (`find_key_algebraic`)
 
 Fungsi ini mencari matriks kunci $K$ menggunakan rumus $K = (C \cdot P^{-1}) \pmod{26}$ berdasarkan sampel *plaintext* dan *ciphertext*:
 
@@ -59,3 +59,4 @@ Fungsi ini mencari matriks kunci $K$ menggunakan rumus $K = (C \cdot P^{-1}) \pm
    * Mengalikan matriks $C$ dengan $P^{-1}$ modulo 26:
      $$K = (C \cdot P^{-1}) \pmod{26}$$
 5. **Hasil:** Mengembalikan matriks $K$ berukuran $2 \times 2$ yang berhasil ditemukan.
+
