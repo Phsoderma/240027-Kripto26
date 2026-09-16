@@ -106,6 +106,8 @@ Masukkan Key       : KUNCI
 Hasil Ciphertext   : RYTNWYQZLT
 ```
 
+![Menu 1](assets/ss-1.png)
+
 ### 2. Mencari Plaintext (dari Ciphertext + Key)
 
 ```
@@ -116,6 +118,8 @@ Masukkan Key       : KUNCI
 Hasil Plaintext    : HELLOWORLD
 ```
 
+![Menu 2](assets/ss-2.png)
+
 ### 3. Mencari Key (dari Plaintext + Ciphertext)
 
 ```
@@ -125,3 +129,5 @@ Masukkan Ciphertext: RYTNWYQZLT
 
 Hasil Key          : KUNCIKUNCI
 ```
+
+![Menu 3](assets/ss-3.png)
