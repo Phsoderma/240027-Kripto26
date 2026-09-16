@@ -87,8 +87,8 @@ python vigenere.py
 
 ```
 ******** MENU VIGENERE CIPHER ********
-1. Cari Ciphertext
-2. Cari Plaintext
+1. Cari Ciphertext (Enkripsi)
+2. Cari Plaintext (Dekripsi)
 3. Cari Key
 4. Keluar
 Pilih menu (1-4):
@@ -125,11 +125,3 @@ Masukkan Ciphertext: RYTNWYQZLT
 
 Hasil Key          : KUNCIKUNCI
 ```
-
-> Catatan: hasil pencarian key akan muncul sepanjang teks aslinya (misalnya `KUNCIKUNCI` untuk key asli `KUNCI` pada teks 10 huruf), karena pola perulangan key ikut terbaca dari hasil perhitungan per karakter.
-
-## Batasan Program
-
-- Panjang plaintext dan ciphertext **harus sama** saat mencari key, jika tidak program akan menampilkan pesan error.
-- Program hanya memproses karakter alfabet (A-Z); spasi, angka, dan simbol lain akan otomatis dihapus melalui `clean_text()`.
-- Semua huruf dinormalisasi menjadi kapital, sehingga input huruf besar/kecil tidak memengaruhi hasil akhir.
