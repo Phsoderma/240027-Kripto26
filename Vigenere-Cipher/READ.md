@@ -100,10 +100,10 @@ Pilih menu (1-4):
 
 ```
 Pilih menu (1-4): 1
-Masukkan Plaintext : Hello World
-Masukkan Key       : KUNCI
+Masukkan Plaintext : OMEGA
+Masukkan Key       : LUL
 
-Hasil Ciphertext   : RYTNWYQZLT
+Hasil Ciphertext   : ZGPRU
 ```
 
 ![Menu 1](assets/ss-1.png)
@@ -112,10 +112,10 @@ Hasil Ciphertext   : RYTNWYQZLT
 
 ```
 Pilih menu (1-4): 2
-Masukkan Ciphertext: RYTNWYQZLT
-Masukkan Key       : KUNCI
+Masukkan Ciphertext: ZGPRU
+Masukkan Key       : LUL
 
-Hasil Plaintext    : HELLOWORLD
+Hasil Plaintext    : OMEGA
 ```
 
 ![Menu 2](assets/ss-2.png)
@@ -124,10 +124,10 @@ Hasil Plaintext    : HELLOWORLD
 
 ```
 Pilih menu (1-4): 3
-Masukkan Plaintext : HELLOWORLD
-Masukkan Ciphertext: RYTNWYQZLT
+Masukkan Plaintext : OMEGA
+Masukkan Ciphertext: ZGPRU
 
-Hasil Key          : KUNCIKUNCI
+Hasil Key          : LULLU
 ```
 
 ![Menu 3](assets/ss-3.png)
